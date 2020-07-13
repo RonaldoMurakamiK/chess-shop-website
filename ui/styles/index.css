@@ -98,3 +98,21 @@
     background-color: #000;
   }
 }
+
+/* CAROUSEL */
+.carousel {
+  margin-top: 50px;
+}
+.carousel img {
+  height: 800px;
+}
+
+@media (max-width: 1200px) {
+  .carousel img {
+    height: 230px;
+    object-fit: cover;
+  }
+  .carousel {
+    margin-top: 90px;
+  }
+}
