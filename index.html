@@ -6,12 +6,13 @@
     <meta name="description" content="Static chess shop repository using html, css, bootstrap and javascript. Note: I love chess.">
     <meta name="keywords" content="chess shop, repository, chess, shop, responsive, ui design">
     <meta name="author" content="Ronaldo Murakami">
-    <link rel="stylesheet" href="ui/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="ui/styles/index.css">
-    <link rel="stylesheet" href="ui/styles/navbar/navbar.css">
+    <link rel="stylesheet" href="./ui/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./ui/styles/index.css">
+    <link rel="stylesheet" href="./ui/styles/navbar/navbar.css">
+    <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="ui/scripts/navbar/navbar.js"></script>
-    <script src="ui/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./ui/scripts/navbar/navbar.js"></script>
+    <script src="./ui/bootstrap/js/bootstrap.min.js"></script>
     <title>ChessShop</title>
   </head>
   <body>
@@ -29,22 +30,22 @@
               <div class="collapse navbar-collapse" style="margin-left: 0px;" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto py-4 py-md-0">
                 <li class="pl-4 pl-md-0 ml-0 ml-md-4">
-                  <a href="" class="nav-link">Início</a>
+                  <a href="#" class="nav-link">Início</a>
                 </li>
                 <li class="pl-4 pl-md-0 ml-0 ml-md-4">
-                  <a href="" class="nav-link">Produtos</a>
+                  <a href="#" class="nav-link">Produtos</a>
                 </li>
                 <li class="pl-4 pl-md-0 ml-0 ml-md-4">
-                  <a href="" class="nav-link">Sobre nós</a>
+                  <a href="#" class="nav-link">Sobre nós</a>
                 </li>
                 <li class="pl-4 pl-md-0 ml-0 ml-md-4">
-                  <a href="" class="nav-link">Localização e Contato</a>
+                  <a href="#" class="nav-link">Localização e Contato</a>
                 </li>
                 <li class="pl-4 pl-md-0 ml-0 ml-md-4">
-                  <a href="" class="nav-link">Entre</a>
+                  <a href="#" class="nav-link">Entre</a>
                 </li>
                 <li class="pl-4 pl-md-0 ml-0 ml-md-4">
-                  <a href="" class="nav-link">Cadastre-se</a>
+                  <a href="#" class="nav-link">Cadastre-se</a>
                 </li>
               </ul>
               </div>
@@ -64,13 +65,110 @@
             <button class="banner-button">SAIBA MAIS</button>
           </a>
         </div>
-        <div class="col-md-12">
-          <a class="banner-scroll" href="#produtos"><span></span></a>
+        <div class="col-md-12 banner-scroll-session">
+          <a class="banner-scroll" href="#product"><span></span></a>
         </div>
       </div>
-      <div id="produtos">
-
+      <div id="product"></div>
+      <div class="product-session">
+        <h1 class="product-title-session">CONHEÇA NOSSOS PRODUTOS</h1>
+        <div class="row align-products">
+          <div class="col-md-3 col-sm-12 card-session">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="./assets/products-home/product-1.jpg" alt="Chessboard product">
+              </div>
+              <div class="product-details">
+                <span class="product-catagory">TABULEIROS</span>
+                <h4><a href="">TABULEIRO IMPORTADO</a></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+                <div class="product-bottom-details">
+                  <div class="product-price"><small>R$100,00</small>R$79,90</div>
+                  <div class="product-links">
+                    <i class="fa fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12 card-session">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="./assets/products-home/product-2.jpg" alt="Chessboard product">
+              </div>
+              <div class="product-details">
+                <span class="product-catagory">QUADROS</span>
+                <h4><a href="">QUADRO PARA PAREDE</a></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+                <div class="product-bottom-details">
+                  <div class="product-price"><small>R$220,00</small>R$189,90</div>
+                  <div class="product-links">
+                    <i class="fa fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12 card-session">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="./assets/products-home/product-3.jpg" alt="Chessboard product">
+              </div>
+              <div class="product-details">
+                <span class="product-catagory">PEÇAS</span>
+                <h4><a href="">CONJUNTO DE PEÇAS</a></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+                <div class="product-bottom-details">
+                  <div class="product-price"><small>R$370,00</small>R$349,90</div>
+                  <div class="product-links">
+                    <i class="fa fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 banner-scroll-session">
+          <a class="banner-scroll" href="#testimonial"><span></span></a>
+        </div>
       </div>
-      <br><br><br><br><br><br>
+      <div id="testimonial"></div>
+      <div class="testimonial-session">
+        <h1 class="testimonial-title-session" style="color: white;">O QUE NOSSOS CLIENTES DIZEM</h1>
+        <div id="testimonial" class="carousel slide" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="testimonial_slide">
+                <img src="./assets/coments-home/person1.jpg" class="img-circle img-responsive" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h4>Ronaldo Murakami</h4>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial_slide">
+                <img src="./assets/coments-home/person2.jpg" class="img-circle img-responsive" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h4>Uzumaki Naruto</h4>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial_slide">
+                <img src="./assets/coments-home/person3.jpg" class="img-circle img-responsive" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h4>Monkey D. Luffy</h4>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#testimonial" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#testimonial" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+        <div class="col-md-12 banner-scroll-session" style="margin-top: 25vh;">
+          <a class="banner-scroll" href="#comentarios"><span style="border-left: 5px solid #ffffff; border-bottom: 5px solid #ffffff;"></span></a>
+        </div>
+      </div>
   </body>
 </html>
