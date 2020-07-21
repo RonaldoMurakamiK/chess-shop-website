@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="./ui/styles/navbar/navbar.css">
     <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://raw.githubusercontent.com/digitalBush/jquery.maskedinput/master/dist/jquery.maskedinput.min.js"></script>
     <script src="./ui/scripts/navbar/navbar.js"></script>
     <script src="./ui/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./ui/scripts/index.js"></script>
     <title>ChessShop</title>
   </head>
   <body>
@@ -21,7 +23,7 @@
         <div class="navigation-wrap bg-light start-header start-style">
           <div class="row">
             <nav class="navbar navbar-expand-xl navbar-light">
-              <a class="navbar-brand" style="margin-left: 20px;" href="">
+              <a class="navbar-brand" style="margin-left: 20px;" href="#">
                 <img src="assets/logo.png" alt="logo-site">
               </a>
               <button class="navbar-toggler" style="border: none; margin-right: 20px;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
@@ -54,127 +56,171 @@
         </div>
       </header>
 
-      <!-- BANNER SESSION -->
-      <div class="banner row">
-        <div class="col-md-6 col-sm-12 banner-image-container">
-          <img src="./assets/banner.svg" alt="Banner" class="banner-image">
+      <!-- BANNER SECTION -->
+      <section>
+        <div class="banner row">
+          <div class="col-md-6 col-sm-12 banner-image-container">
+            <img src="./assets/banner.svg" alt="Banner" class="banner-image">
+          </div>
+          <div class="clearfix visible-sm"></div>
+          <div class="col-md-6 col-sm-12 banner-text-container">
+            <h1 class="title-banner">ChessShop, um espaço único para você</h1>
+            <h2 class="subtitle-banner">Dezenas de produtos à pronta-entrega<br>Não tenha medo de comprar, nossas embalagens são 100% ecológicas!</h2>
+            <a href="#" target="_blank">
+              <button class="banner-button">SAIBA MAIS</button>
+            </a>
+          </div>
+          <div class="col-md-12 banner-scroll-section">
+            <a class="banner-scroll" href="#product"><span></span></a>
+          </div>
         </div>
-        <div class="clearfix visible-sm"></div>
-        <div class="col-md-6 col-sm-12 banner-text-container">
-          <h1 class="title-banner">ChessShop, um espaço único para você</h1>
-          <h2 class="subtitle-banner">Dezenas de produtos à pronta-entrega<br>Não tenha medo de comprar, nossas embalagens são 100% ecológicas!</h2>
-          <a href="" target="_blank">
-            <button class="banner-button">SAIBA MAIS</button>
-          </a>
-        </div>
-        <div class="col-md-12 banner-scroll-session">
-          <a class="banner-scroll" href="#product"><span></span></a>
-        </div>
-      </div>
+      </section>
 
-      <!-- PRODUCT SESSION -->
-      <div id="product"></div>
-      <div class="col-md-12 product-session">
-        <h1 class="product-title-session">CONHEÇA NOSSOS PRODUTOS</h1>
-        <div class="row align-products">
-          <div class="col-md-3 col-sm-12 card-session">
-            <div class="product-card">
-              <div class="product-image">
-                <img src="./assets/products-home/product-1.jpg" alt="Chessboard product">
+      <!-- PRODUCT SECTION -->
+      <section>
+        <div id="product"></div>
+        <div class="col-md-12 product-section">
+          <h1 class="product-title-section">CONHEÇA NOSSOS PRODUTOS</h1>
+          <div class="row align-products">
+            <div class="col-md-3 col-sm-12 card-section">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="./assets/home/products/product-1.jpg" alt="Chessboard product">
+                </div>
+                <div class="product-details">
+                  <span class="product-catagory">TABULEIROS</span>
+                  <h4><a href="#">TABULEIRO IMPORTADO</a></h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+                  <div class="product-bottom-details">
+                    <div class="product-price"><small>R$100,00</small>R$79,90</div>
+                    <div class="product-links">
+                      <i class="fa fa-shopping-cart"></i>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="product-details">
-                <span class="product-catagory">TABULEIROS</span>
-                <h4><a href="">TABULEIRO IMPORTADO</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
-                <div class="product-bottom-details">
-                  <div class="product-price"><small>R$100,00</small>R$79,90</div>
-                  <div class="product-links">
-                    <i class="fa fa-shopping-cart"></i>
+            </div>
+            <div class="col-md-3 col-sm-12 card-section">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="./assets/home/products/product-2.jpg" alt="Chessboard product">
+                </div>
+                <div class="product-details">
+                  <span class="product-catagory">QUADROS</span>
+                  <h4><a href="#">QUADRO PARA PAREDE</a></h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+                  <div class="product-bottom-details">
+                    <div class="product-price"><small>R$220,00</small>R$189,90</div>
+                    <div class="product-links">
+                      <i class="fa fa-shopping-cart"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-12 card-section">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="./assets/home/products/product-3.jpg" alt="Chessboard product">
+                </div>
+                <div class="product-details">
+                  <span class="product-catagory">PEÇAS</span>
+                  <h4><a href="#">CONJUNTO DE PEÇAS</a></h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+                  <div class="product-bottom-details">
+                    <div class="product-price"><small>R$370,00</small>R$349,90</div>
+                    <div class="product-links">
+                      <i class="fa fa-shopping-cart"></i>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-12 card-session">
-            <div class="product-card">
-              <div class="product-image">
-                <img src="./assets/products-home/product-2.jpg" alt="Chessboard product">
-              </div>
-              <div class="product-details">
-                <span class="product-catagory">QUADROS</span>
-                <h4><a href="">QUADRO PARA PAREDE</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
-                <div class="product-bottom-details">
-                  <div class="product-price"><small>R$220,00</small>R$189,90</div>
-                  <div class="product-links">
-                    <i class="fa fa-shopping-cart"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-12 card-session">
-            <div class="product-card">
-              <div class="product-image">
-                <img src="./assets/products-home/product-3.jpg" alt="Chessboard product">
-              </div>
-              <div class="product-details">
-                <span class="product-catagory">PEÇAS</span>
-                <h4><a href="">CONJUNTO DE PEÇAS</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
-                <div class="product-bottom-details">
-                  <div class="product-price"><small>R$370,00</small>R$349,90</div>
-                  <div class="product-links">
-                    <i class="fa fa-shopping-cart"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="col-md-12 banner-scroll-section">
+            <a class="banner-scroll" href="#testimonial"><span></span></a>
           </div>
         </div>
-        <div class="col-md-12 banner-scroll-session">
-          <a class="banner-scroll" href="#testimonial"><span></span></a>
-        </div>
-      </div>
+      </section>
 
-      <!-- TESTIMONIAL SESSION -->
-      <div id="testimonial"></div>
-      <div class="col-md-12 col-sm-12 testimonial-session">
-        <h1 class="testimonial-title-session" style="color: white;">O QUE NOSSOS CLIENTES DIZEM</h1>
-        <div id="testimonial2" class="carousel slide" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <div class="testimonial_slide">
-                <img src="./assets/coments-home/person1.jpg" class="img-circle img-responsive" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <h4>Ronaldo Murakami</h4>
+      <!-- TESTIMONIAL SECTION -->
+      <section>
+        <div id="testimonial"></div>
+        <div class="col-md-12 col-sm-12 testimonial-section">
+          <h1 class="testimonial-title-section" style="color: white;">O QUE NOSSOS CLIENTES DIZEM</h1>
+          <div id="testimonial2" class="carousel slide" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+            <div class="carousel-inner" role="listbox" aria-label="comentarios">
+              <div class="carousel-item active">
+                <div class="testimonial_slide">
+                  <img src="./assets/home/coments/person1.jpg" class="img-circle img-responsive" alt="pessoa1"/>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <h4>Ronaldo Murakami</h4>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial_slide">
+                  <img src="./assets/home/coments/person2.jpg" class="img-circle img-responsive" alt="pessoa2"/>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <h4>Uzumaki Naruto</h4>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial_slide">
+                  <img src="./assets/home/coments/person3.jpg" class="img-circle img-responsive" alt="pessoa3"/>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <h4>Monkey D. Luffy</h4>
+                </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="testimonial_slide">
-                <img src="./assets/coments-home/person2.jpg" class="img-circle img-responsive" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <h4>Uzumaki Naruto</h4>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="testimonial_slide">
-                <img src="./assets/coments-home/person3.jpg" class="img-circle img-responsive" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <h4>Monkey D. Luffy</h4>
-              </div>
-            </div>
+            <a class="carousel-control-prev" href="#testimonial2" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#testimonial2" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
           </div>
-          <a class="carousel-control-prev" href="#testimonial2" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#testimonial2" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </a>
+          <div class="col-md-12 banner-scroll-section" style="margin-top: 25vh;">
+            <a class="banner-scroll" href="#contact"><span style="border-left: 5px solid #ffffff; border-bottom: 5px solid #ffffff;"></span></a>
+          </div>
         </div>
-        <div class="col-md-12 banner-scroll-session" style="margin-top: 25vh;">
-          <a class="banner-scroll" href="#comentarios"><span style="border-left: 5px solid #ffffff; border-bottom: 5px solid #ffffff;"></span></a>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section>
+        <div id="contact"></div>
+        <div class="col-md-12 contact-section">
+          <h1 class="product-title-section">ENTRE EM CONTATO CONOSCO</h1>
+          <img src="./assets/home/contact/image-illustration.svg" class="img-contact img-responsive" alt="pessoa1"/>
+          <div class="alert alert-success col-md-8 alert-message" id="alert-message" role="alert">
+            Mensagem enviada com sucesso!
+          </div>
+          <form class="contact-form">
+            <div class="contact-form-group row">
+              <div class="form-group col-md-4">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" aria-describedby="nome" placeholder="Digite seu nome">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="telefone">Telefone</label>
+                <input type="tel" class="form-control" id="telefone" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);" placeholder="Digite seu telefone">
+              </div>
+            </div>
+            <div class="contact-form-group row">
+              <div class="form-group col-md-8">
+                <label for="email">Endereço de email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Digite seu e-mail">
+                <small id="email" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+              </div>
+            </div>
+            <div class="contact-form-group row">
+              <div class="form-group col-md-8">
+                <label for="mensagem">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="3" placeholder="Digite sua mensagem"></textarea>
+              </div>
+            </div>
+            <button type="button" class="banner-button" onclick="setAlertMessage()">ENVIAR MENSAGEM</button>
+          </form>
         </div>
-      </div>
+      </section>
   </body>
 </html>
