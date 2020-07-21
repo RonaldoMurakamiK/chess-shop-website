@@ -1,4 +1,4 @@
-/* BANNER section */
+/* BANNER SECTION */
 .banner {
   background-color: rgba(240, 194, 46, 0.164);
   width: 100%;
@@ -116,10 +116,10 @@
   }
 }
 
-/* PRODUCT section */
+/* PRODUCT SECTION */
 .product-section {
   height: 100vh;
-  background-image: url('../../assets/home/products/background.png');
+  background-image: url('../../../assets/home/products/background.png');
   text-align: center;
 }
 .product-title-section {
@@ -219,10 +219,10 @@
   }
 }
 
-/* TESTIMONIAL */
+/* TESTIMONIAL SECTION */
 .testimonial-section {
   height: 100vh;
-  background-image: url('../../assets/home/coments/background.png');
+  background-image: url('../../../assets/home/coments/background.png');
   text-align: center;
 }
 .testimonial-title-section {
@@ -277,7 +277,7 @@
   }
 }
 
-/* CONTACT */
+/* CONTACT SECTION */
 .contact-section {
   height: 110vh;
   text-align: center;
@@ -300,4 +300,29 @@
   margin-bottom: 20px;
   height: 30%;
   width: 100%;
+}
+
+@media (min-height: 500px) and (max-height: 599px) {
+  .contact-section {
+    height: 220vh;
+    text-align: center;
+  }
+}
+@media (min-height: 600px) and (max-height: 699px) {
+  .contact-section {
+    height: 200vh;
+    text-align: center;
+  }
+}
+@media (min-height: 700px) and (max-height: 799px) {
+  .contact-section {
+    height: 170vh;
+    text-align: center;
+  }
+}
+@media (min-height: 800px) and (max-height: 899px) {
+  .contact-section {
+    height: 150vh;
+    text-align: center;
+  }
 }
