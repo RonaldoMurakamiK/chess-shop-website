@@ -157,15 +157,16 @@
   color: #ccc;
   margin-bottom: 18px;
 }
-.product-details h4 a {
+.product-details h1 a {
   font-weight: 500;
   display: block;
   margin-bottom: 18px;
   color: #363636;
   text-decoration: none;
+  font-size: 25px;
   transition: 0.3s;
 }
-.product-details h4 a:hover {
+.product-details h1 a:hover {
   color: #FFD43B;
 }
 .product-details p {
@@ -252,7 +253,7 @@
   line-height: 1.4;
   margin: 40px 0 20px 0;
 }
-.testimonial_slide h4 {
+.testimonial_slide h1 {
   color: #ffffff;
   font-size: 22px;
 }
