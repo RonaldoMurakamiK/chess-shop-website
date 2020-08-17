@@ -10,7 +10,7 @@
 <img src="./screenshots/first-section.png" width="100%" height="100%"/>
 
 ### Mobile
-<img src="./screenshots/first-section-mobile.png" width="33%" height="680px"/><img src="./screenshots/navbar-mobile.png" width="33%" height="680px"/><img src="./screenshots/tertimonial-section-mobile.png" width="33%" height="680px"/><br><br>
+<img src="./screenshots/first-section-mobile.png" width="40%" height="740px"/><img src="./screenshots/navbar-mobile.png" width="40%" height="740px"/>
 
 ## Demo
 ![Farmers Market Finder Demo](screenshots/demo.gif)<br><br>
